@@ -6,3 +6,8 @@ for i in range(5):
 
 # Random Number Generation
 # Make a Dice App
+
+# can also use "from" import statements
+# e.g. from random import randint, randbytes, randrange
+# doing this method allows the use of simply the function name without the {library}. notation
+# book says using the dot-notation makes code more readable
