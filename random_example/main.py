@@ -9,5 +9,5 @@ for i in range(5):
 
 # can also use "from" import statements
 # e.g. from random import randint, randbytes, randrange
-# doing this method allows the use of simply the function name without the {library}. notation
+# doing this method allows the use of the function name without the (library). prefix
 # book says using the dot-notation makes code more readable
