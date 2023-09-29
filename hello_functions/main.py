@@ -9,9 +9,10 @@ def hello():
 
 
 def number_spew():
+    spew = ""
     for i in range(10):
-        spew = random.randint(0, 9)
-        print(spew)
+        spew = spew + str(random.randint(0, 9))
+    print(spew)
 
 
 def greet(name):
