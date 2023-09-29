@@ -37,12 +37,15 @@ def roll_d100():
     return result
 
 
+print('Multi-Sided Dice Roller!')
 while True:
     while True:
-        print('Which dice to roll: 4, 6, 8, 10, 12, 20, 100')
+        print('Which dice to roll? d(4), d(6), d(8), d(10), d(12), d(20), d(100) > ', end='')
         dice = input()
         roll = 0
-        if not dice == '':
+        if dice == 'q':
+            sys.exit()
+        elif not dice == '':
             if int(dice) == 4:
                 roll = roll_d4()
                 break
@@ -64,10 +67,8 @@ while True:
             elif int(dice) == 100:
                 roll = roll_d100()
                 break
-            else:
-                print("Please type one of the following: 4, 6, 8, 10, 12, 20, 100")
-        elif dice == 'q':
-            sys.exit()
+        else:
+            print("Please type one of the following: 4, 6, 8, 10, 12, 20, 100")
     print("Rolling a D" + str(dice) + ": " + str(roll))
 
 
